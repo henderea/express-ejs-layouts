@@ -1,14 +1,14 @@
-<%- contentFor('header') %>
+<%- block.start('header') %>
 <h1 class="page-title"><%= _locals.title %></h1>
-
-<%- contentFor('footer') %>
+<%- block.end('header') %>
+<%- block.start('footer') %>
 <h1>This is the footer</h1>
+<%- block.end('footer') %>
 
 <% /*
-Content for the `body` section should either be the first thing defined
-in the view, or it has to be declared just like any other section.
+Content for the `body` section should either be outside any block
+in the view, or declared just like any other section.
 */ %>
-<%- contentFor('body') %>
 
 This is part of the body.
 

@@ -1,6 +1,6 @@
 {
-  "author": "Igor Soarez <igorsoarez@gmail.com>",
-  "name": "express-ejs-layouts",
+  "author": "Eric Henderson <henderea@gmail.com>",
+  "name": "@henderea/express-ejs-layouts",
   "description": "Layout support for ejs in express.",
   "keywords": [
     "express",
@@ -19,7 +19,7 @@
   },
   "optionalDependencies": {},
   "scripts": {
-    "test": "mocha"
+    "--test": "mocha"
   },
-  "repository": "git://github.com/Soarez/express-ejs-layouts.git"
+  "repository": "git://github.com/henderea/express-ejs-layouts.git"
 }

@@ -21,9 +21,12 @@
   <footer>
     <% /*
     Define an optional placeholder for the footer.
-    If a page doesn't define a footer, this section will simply be empty.
+    If a page doesn't define a footer, this section will use the fallback if there is one
     */ %>
-    <%- defineContent('footer') %>
+    <% block.fallback('footer', () => { %>
+    <h4>Default Footer</h4>
+    <% }) %>
+    <%- block('footer') %>
   </footer>
 
   <% /* Place any scripts contained in views at the end of the page. */ %>
